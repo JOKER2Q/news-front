@@ -1,13 +1,12 @@
 import "./App.css";
+import About from "./components/About";
 import Footer from "./components/Footer";
-import Videos from "./components/Videos";
 function App() {
   return (
     <>
       <h1>HELLO WORLD!</h1>
-      <h1>HELLO WORLD!</h1>
-      <h1>HELLO WORLD!</h1>
-      <Videos />
+      <About />
+
       <Footer />
     </>
   );
