@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.videos {
+  width: 100%;
+  background: #000000;
+  color: aliceblue;
+  box-shadow: 1px 6px 20px 20px #000000bf;
+  backdrop-filter: blur(30px);
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.videos .header {
+  width: 90%;
+  margin: auto;
+}
+.videos .header h1 {
+  position: relative;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.videos .header h1:hover {
+  position: relative;
+  color: red;
+}
+.videos .header h1::after {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 57%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.videos .video {
+  width: 90%;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  margin: auto;
+  gap: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.videos .video .video-item {
+  width: 394.667px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
 }
-
-.App-link {
-  color: #61dafb;
+.videos .video .video-item .img {
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.videos .video .video-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.videos .video .video-item img:hover {
+  transform: scale(1.1);
+}
+.videos .video .video-item h1 {
+  cursor: pointer;
+  padding: 3px 0px;
+  font-size: 20px;
+}
+.videos .video .video-item p {
+  font-size: 10px;
+  padding: 3px 0px;
 }
