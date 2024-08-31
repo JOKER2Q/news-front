@@ -145,3 +145,23 @@
 .contact .row .col-md-7 .form-group {
   margin-bottom: 1rem;
 }
+@media (max-width: 670px) {
+  .contact .row .col-md-5 {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  .contact .row {
+    flex-direction: column;
+  }
+  .contact .row .col-md-7 .col-sm-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width:300px) {
+
+
+  .contact .form-control {
+    padding: 18px;
+  }
+}
