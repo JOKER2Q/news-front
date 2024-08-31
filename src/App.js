@@ -1,7 +1,7 @@
 import "./App.css";
 import About from "./components/About";
-import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import Login from "./components/Login";
 
 function App() {
   return (
@@ -9,7 +9,8 @@ function App() {
       <h1>HELLO WORLD!</h1>
       <About />
       <Contact />
-      <Footer />
+
+      <Login />
     </>
   );
 }
